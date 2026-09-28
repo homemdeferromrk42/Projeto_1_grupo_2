@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Inspeção do modelo — Aula 9</title>
+  <style>
+    *{box-sizing:border-box}html,body,#canvas{width:100%;height:100%;margin:0;overflow:hidden}body{font-family:Arial,sans-serif;background:#202a30}#canvas{display:block;touch-action:none}.painel{position:fixed;z-index:2;left:22px;top:22px;width:min(370px,calc(100% - 44px));padding:20px;background:rgba(8,27,38,.94);border:1px solid #547080;border-radius:12px;color:#eef8fc;box-shadow:0 15px 40px #0007}.marca{color:#ef2437;font-size:13px;font-weight:800;letter-spacing:.07em}.painel h1{font-size:21px;margin:8px 0}.status{color:#a9bfcb;font-size:14px;line-height:1.45}.ok{color:#58dfa2}.erro{color:#ff7b75}.linha{display:flex;justify-content:space-between;gap:15px;padding:8px 0;border-bottom:1px solid #294554}.linha strong{color:#fff}.controle{margin-top:15px}.controle label{display:flex;justify-content:space-between;font-weight:700;font-size:13px}.controle input{width:100%;margin-top:8px;accent-color:#ef2437}
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <section class="painel">
+    <div class="marca">SENAI • INSPEÇÃO DO MODELO 3D</div>
+    <h1>MODELO_ALUNO.glb</h1>
+    <div class="linha"><span>Arquivo</span><strong id="arquivo">carregando...</strong></div>
+    <div class="linha"><span>Componente líquido</span><strong id="liquidoStatus">—</strong></div>
+    <div class="linha"><span>Componente volante</span><strong id="volanteStatus">—</strong></div>
+    <div class="controle"><label for="nivel"><span>Nível de teste</span><span id="nivelValor">100%</span></label><input id="nivel" type="range" min="5" max="100" value="100"></div>
+    <div class="controle"><label for="giro"><span>Giro do volante</span><span id="giroValor">0°</span></label><input id="giro" type="range" min="0" max="300" value="0"></div>
+    <p id="status" class="status">Copie o modelo exportado pelo Inventor para public/models e abra esta página novamente.</p>
+  </section>
+  <script type="module" src="/src/modelo.js"></script>
+</body>
+</html>

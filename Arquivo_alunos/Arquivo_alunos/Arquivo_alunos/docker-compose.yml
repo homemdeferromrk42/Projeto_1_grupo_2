@@ -1,0 +1,11 @@
+services:
+  estacao-de-nivel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: estacao-de-nivel:latest
+    container_name: estacao-de-nivel
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+

@@ -1,0 +1,12 @@
+ARQUIVO ALUNOS AULA 9
+
+1. Leia o arquivo README.md.
+2. Consulte docs/Manual_Aula_09_Aluno.docx.
+3. Grave arduino/Arduino_Aula_09.ino no Arduino.
+4. Execute docker compose up --build -d nesta pasta.
+5. Abra http://localhost:8080 no Chrome ou Edge.
+6. Teste primeiro o tanque genérico.
+7. Modele e monte sua estação no Autodesk Inventor.
+8. Exporte o conjunto para web/public/models/MODELO_ALUNO.glb.
+9. Em web/src/main.js, altere usarModeloInventor para true.
+10. Reconstrua o Docker e valide todas as funções.

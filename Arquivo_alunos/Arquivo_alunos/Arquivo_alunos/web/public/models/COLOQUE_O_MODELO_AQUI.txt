@@ -1,0 +1,15 @@
+Exporte o conjunto montado no Autodesk Inventor para o formato GLB.
+
+Nome sugerido do arquivo:
+MODELO_ALUNO.glb
+
+Depois de copiar o arquivo para esta pasta, abra src/main.js e altere:
+
+usarModeloInventor: false
+
+para:
+
+usarModeloInventor: true
+
+Se o arquivo tiver outro nome, altere tambem a propriedade arquivo.
+Se os componentes tiverem outros nomes, ajuste o bloco componentes.
