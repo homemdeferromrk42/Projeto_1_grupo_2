@@ -9,9 +9,9 @@ import "@babylonjs/loaders/glTF";
 // 4. Troque usarModeloInventor para true somente depois da exportação.
 // ================================================================
 const CONFIG_MODELO = {
-  usarModeloInventor: false,
-  arquivo: "MODELO_ALUNO.glb",
-  rotacaoYGraus: -90,
+  usarModeloInventor: true,
+  arquivo: "ESTACAO_ALUNO.glb",
+  rotacaoYGraus: -180,
   componentes: {
     liquido: "LIQUIDO",
     volante: "VOLANTE",
